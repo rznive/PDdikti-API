@@ -1,5 +1,4 @@
-```markdown
-# API PDDIKTI KEMENDIKBUD | CARI DATA MAHASISWA | CARI DATA DOSEN | CARI DATA PERGURUAN TINGGI
+# API PDDIKTI KEMENDIKBUD
 
 API ini menyediakan akses untuk mencari dan mendapatkan informasi tentang mahasiswa dan dosen menggunakan data dari [PDDIKTI.GO.ID](https://pddikti.kemdikbud.go.id/).
 
@@ -9,22 +8,20 @@ API ini menyediakan akses untuk mencari dan mendapatkan informasi tentang mahasi
 - Mendapatkan detail mahasiswa
 - Mencari dosen berdasarkan nama
 - Mendapatkan detail dosen
-- cooming soon
+- Coming soon
 
 ## Endpoint
 
 ### Mahasiswa
 
 - **Mencari Mahasiswa**
-
-  - **URL:** `/api/pddikti/pencarian/mhs`
+  - **URL:** `/api/pddikti/searchMhs`
   - **Metode:** `GET`
   - **Query Parameter:** `nama` (string, wajib)
   - **Respon:** Daftar mahasiswa sesuai nama/nim.
 
 - **Detail Mahasiswa**
-
-  - **URL:** `/api/pddikti/detail/mhs`
+  - **URL:** `/api/pddikti/detailMhs`
   - **Metode:** `GET`
   - **Query Parameter:** `idMhs` (string, wajib)
   - **Respon:** Detail mahasiswa.
@@ -32,15 +29,13 @@ API ini menyediakan akses untuk mencari dan mendapatkan informasi tentang mahasi
 ### Dosen
 
 - **Mencari Dosen**
-
-  - **URL:** `/api/pddikti/pencarian/dosen`
+  - **URL:** `/api/pddikti/searchDsn`
   - **Metode:** `GET`
   - **Query Parameter:** `nama` (string, wajib)
   - **Respon:** Daftar dosen sesuai nama.
 
 - **Detail Dosen**
-
-  - **URL:** `/api/pddikti/detail/dosen`
+  - **URL:** `/api/pddikti/detailDsn`
   - **Metode:** `GET`
   - **Query Parameter:** `idDsn` (string, wajib)
   - **Respon:** Detail dosen dan riwayat pendidikan.
@@ -51,5 +46,3 @@ API ini menyediakan akses untuk mencari dan mendapatkan informasi tentang mahasi
 - **404 Not Found:** Data tidak ditemukan.
 - **500 Internal Server Error:** Kesalahan server.
 
-- **rznive**
-```
